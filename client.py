@@ -15,4 +15,4 @@ data = "Hello server!!"
 s.send(data.encode('utf-8'))        # Encode data to utf-8 and sends data to server
 msg = s.recv(1024)                  # Receives upto 1024 bytes from server and stores it in variables msg
 print("Back from server : " + msg.strip().decode('ascii'))
-s.close()  # Closes the socket and end the program
+s.close()                           # Closes the socket and end the program
